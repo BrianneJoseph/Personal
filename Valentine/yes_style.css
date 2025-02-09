@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9e3e3;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+
+#fireworksCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0; /* Ensure it's behind everything */
+    pointer-events: none; /* Prevent it from blocking interactions */
+}
+
+.container {
+    position: relative;
+    z-index: 1; /* Ensure it's above the canvas */
+    text-align: center;
+}
+
+.header_text {
+    font-size: 3em;
+    color: #d32f2f;
+}
+
+.sub_text {
+    font-size: 2em;
+    color: #d32f2f;
+    margin-top: -10px;
+}
+
+.gif_container img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto;
+}
+
+audio {
+    display: none;
+}
