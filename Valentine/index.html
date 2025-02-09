@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Will You Be My Valentine?</title>
 
+    <!-- Use the shortened URL in the meta tags to control the preview -->
     <meta property="og:title" content="Will You Be My Valentine?">
     <meta property="og:description" content="Click to see something special! ❤️">
     <meta property="og:image" content="https://logotyp.us/file/course-hero.svg">
-    <meta property="og:url" content="https://briannejoseph.github.io/Personal/Valentine/index.html">
+    <meta property="og:url" content="http://bit.ly/3Ey1Sx6"> <!-- Shortened link for preview -->
     <meta name="twitter:card" content="summary_large_image">
     
-
     <link rel="stylesheet" href="styles.css">
 
     <script>
-        // Auto-redirect to the real page after Messenger loads preview
+        // Auto-redirect to the same shortened URL (target link)
         window.onload = function () {
             if (document.referrer.includes("facebook") || document.referrer.includes("messenger")) {
-                window.location.href = "http://bit.ly/3Ey1Sx6";
+                window.location.href = "http://bit.ly/3Ey1Sx6"; // Redirect to the same shortened link
             }
         };
     </script>
